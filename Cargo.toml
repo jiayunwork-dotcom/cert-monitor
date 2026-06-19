@@ -1,0 +1,51 @@
+[package]
+name = "cert-monitor"
+version = "1.0.0"
+edition = "2021"
+description = "SSL证书到期监控与自动续签编排工具"
+license = "MIT"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+tokio = { version = "1.41", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+anyhow = "1.0"
+thiserror = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+colored = "2.1"
+comfy-table = "7.1"
+reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
+rustls = "0.23"
+rustls-pki-types = "1.7"
+rustls-native-certs = "0.8"
+tokio-rustls = "0.26"
+x509-certificate = "0.24"
+ipnet = "2.10"
+sha2 = "0.10"
+base64 = "0.22"
+rand = "0.8"
+lettre = { version = "0.11", default-features = false, features = ["smtp-transport", "tokio1-rustls-tls", "builder", "tokio1"] }
+dirs = "5.0"
+futures = "0.3"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+url = "2.5"
+hmac = "0.12"
+sha1 = "0.10"
+percent-encoding = "2.3"
+serde_urlencoded = "0.7"
+acme-lib = "0.9"
+bcder = "0.7"
+bytes = "1.0"
+
+[dev-dependencies]
+tempfile = "3.10"
+tokio-test = "0.4"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
