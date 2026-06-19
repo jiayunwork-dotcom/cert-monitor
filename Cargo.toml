@@ -17,7 +17,8 @@ chrono = { version = "0.4", features = ["serde"] }
 colored = "2.1"
 comfy-table = "7.1"
 reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
-rustls = "0.23"
+rustls = { version = "0.23", features = ["ring"] }
+ring = "0.17"
 rustls-pki-types = "1.7"
 rustls-native-certs = "0.8"
 tokio-rustls = "0.26"

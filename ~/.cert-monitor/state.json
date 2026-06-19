@@ -1,0 +1,1797 @@
+{
+  "domains": {
+    "192.168.1.100": {
+      "last_scan": "2026-06-19T12:48:08.174405Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.35": {
+      "last_scan": "2026-06-19T12:48:08.174422Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.175": {
+      "last_scan": "2026-06-19T12:48:08.174450Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.145": {
+      "last_scan": "2026-06-19T12:48:08.174368Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.152": {
+      "last_scan": "2026-06-19T12:48:08.174450Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.64": {
+      "last_scan": "2026-06-19T12:48:08.174406Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.251": {
+      "last_scan": "2026-06-19T12:48:08.174452Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.163": {
+      "last_scan": "2026-06-19T12:48:08.174450Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.65": {
+      "last_scan": "2026-06-19T12:48:08.174357Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.84": {
+      "last_scan": "2026-06-19T12:48:08.174364Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.125": {
+      "last_scan": "2026-06-19T12:48:08.174315Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.204": {
+      "last_scan": "2026-06-19T12:48:08.174402Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.81": {
+      "last_scan": "2026-06-19T12:48:08.174420Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.198": {
+      "last_scan": "2026-06-19T12:48:08.174420Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.230": {
+      "last_scan": "2026-06-19T12:48:08.174340Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.77": {
+      "last_scan": "2026-06-19T12:48:08.174414Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.240": {
+      "last_scan": "2026-06-19T12:48:08.174366Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.74": {
+      "last_scan": "2026-06-19T12:48:08.174339Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.223": {
+      "last_scan": "2026-06-19T12:48:08.174402Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.225": {
+      "last_scan": "2026-06-19T12:48:08.174412Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.193": {
+      "last_scan": "2026-06-19T12:48:08.174419Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.116": {
+      "last_scan": "2026-06-19T12:48:08.174420Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.111": {
+      "last_scan": "2026-06-19T12:48:08.174367Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.207": {
+      "last_scan": "2026-06-19T12:48:08.174423Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.252": {
+      "last_scan": "2026-06-19T12:48:08.174368Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.47": {
+      "last_scan": "2026-06-19T12:48:08.174450Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.39": {
+      "last_scan": "2026-06-19T12:48:08.174305Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.112": {
+      "last_scan": "2026-06-19T12:48:08.174365Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.17": {
+      "last_scan": "2026-06-19T12:48:08.174419Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.156": {
+      "last_scan": "2026-06-19T12:48:08.174360Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.114": {
+      "last_scan": "2026-06-19T12:48:08.174414Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.236": {
+      "last_scan": "2026-06-19T12:48:08.174402Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.16": {
+      "last_scan": "2026-06-19T12:48:08.174407Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.48": {
+      "last_scan": "2026-06-19T12:48:08.174341Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.108": {
+      "last_scan": "2026-06-19T12:48:08.174317Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.248": {
+      "last_scan": "2026-06-19T12:48:08.174414Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.72": {
+      "last_scan": "2026-06-19T12:48:08.174418Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.38": {
+      "last_scan": "2026-06-19T12:48:08.174452Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.199": {
+      "last_scan": "2026-06-19T12:48:08.174316Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.57": {
+      "last_scan": "2026-06-19T12:48:08.174449Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.85": {
+      "last_scan": "2026-06-19T12:48:08.174340Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.232": {
+      "last_scan": "2026-06-19T12:48:08.174420Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.202": {
+      "last_scan": "2026-06-19T12:48:08.174423Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.51": {
+      "last_scan": "2026-06-19T12:48:08.174318Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.63": {
+      "last_scan": "2026-06-19T12:48:08.174422Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.146": {
+      "last_scan": "2026-06-19T12:48:08.174403Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.222": {
+      "last_scan": "2026-06-19T12:48:08.174337Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.118": {
+      "last_scan": "2026-06-19T12:48:08.174422Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.166": {
+      "last_scan": "2026-06-19T12:48:08.174408Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.98": {
+      "last_scan": "2026-06-19T12:48:08.174420Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.26": {
+      "last_scan": "2026-06-19T12:48:08.174365Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.6": {
+      "last_scan": "2026-06-19T12:48:08.174450Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.184": {
+      "last_scan": "2026-06-19T12:48:08.174422Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.95": {
+      "last_scan": "2026-06-19T12:48:08.174317Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.53": {
+      "last_scan": "2026-06-19T12:48:08.174406Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.192": {
+      "last_scan": "2026-06-19T12:48:08.174401Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.10": {
+      "last_scan": "2026-06-19T12:48:08.174421Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.12": {
+      "last_scan": "2026-06-19T12:48:08.174317Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.59": {
+      "last_scan": "2026-06-19T12:48:08.174338Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.250": {
+      "last_scan": "2026-06-19T12:48:08.174421Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "api.example.com": {
+      "last_scan": "2026-06-19T12:48:08.174339Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.24": {
+      "last_scan": "2026-06-19T12:48:08.174365Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.110": {
+      "last_scan": "2026-06-19T12:48:08.174406Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.69": {
+      "last_scan": "2026-06-19T12:48:08.174450Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.177": {
+      "last_scan": "2026-06-19T12:48:08.174366Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.180": {
+      "last_scan": "2026-06-19T12:48:08.174418Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.171": {
+      "last_scan": "2026-06-19T12:48:08.174451Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.227": {
+      "last_scan": "2026-06-19T12:48:08.174452Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.133": {
+      "last_scan": "2026-06-19T12:48:08.174357Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.44": {
+      "last_scan": "2026-06-19T12:48:08.174341Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.138": {
+      "last_scan": "2026-06-19T12:48:08.174304Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.8": {
+      "last_scan": "2026-06-19T12:48:08.174405Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.213": {
+      "last_scan": "2026-06-19T12:48:08.174414Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.190": {
+      "last_scan": "2026-06-19T12:48:08.174340Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.208": {
+      "last_scan": "2026-06-19T12:48:08.174401Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.60": {
+      "last_scan": "2026-06-19T12:48:08.174405Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.25": {
+      "last_scan": "2026-06-19T12:48:08.174423Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.78": {
+      "last_scan": "2026-06-19T12:48:08.174402Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.211": {
+      "last_scan": "2026-06-19T12:48:08.174357Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.219": {
+      "last_scan": "2026-06-19T12:48:08.174366Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.197": {
+      "last_scan": "2026-06-19T12:48:08.174407Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.173": {
+      "last_scan": "2026-06-19T12:48:08.174452Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.122": {
+      "last_scan": "2026-06-19T12:48:08.174338Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.115": {
+      "last_scan": "2026-06-19T12:48:08.174339Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.30": {
+      "last_scan": "2026-06-19T12:48:08.174403Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.42": {
+      "last_scan": "2026-06-19T12:48:08.174419Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.90": {
+      "last_scan": "2026-06-19T12:48:08.174365Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.87": {
+      "last_scan": "2026-06-19T12:48:08.174367Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.80": {
+      "last_scan": "2026-06-19T12:48:08.174314Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.105": {
+      "last_scan": "2026-06-19T12:48:08.174364Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.37": {
+      "last_scan": "2026-06-19T12:48:08.174358Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.169": {
+      "last_scan": "2026-06-19T12:48:08.174366Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.170": {
+      "last_scan": "2026-06-19T12:48:08.174341Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.150": {
+      "last_scan": "2026-06-19T12:48:08.174402Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.22": {
+      "last_scan": "2026-06-19T12:48:08.174341Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.189": {
+      "last_scan": "2026-06-19T12:48:08.174401Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.54": {
+      "last_scan": "2026-06-19T12:48:08.174317Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.160": {
+      "last_scan": "2026-06-19T12:48:08.174404Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.217": {
+      "last_scan": "2026-06-19T12:48:08.174405Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.140": {
+      "last_scan": "2026-06-19T12:48:08.174414Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.56": {
+      "last_scan": "2026-06-19T12:48:08.174339Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.153": {
+      "last_scan": "2026-06-19T12:48:08.174420Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.253": {
+      "last_scan": "2026-06-19T12:48:08.174407Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.14": {
+      "last_scan": "2026-06-19T12:48:08.174357Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.212": {
+      "last_scan": "2026-06-19T12:48:08.174340Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.13": {
+      "last_scan": "2026-06-19T12:48:08.174401Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.34": {
+      "last_scan": "2026-06-19T12:48:08.174419Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.141": {
+      "last_scan": "2026-06-19T12:48:08.174340Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.40": {
+      "last_scan": "2026-06-19T12:48:08.174314Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.73": {
+      "last_scan": "2026-06-19T12:48:08.174450Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.75": {
+      "last_scan": "2026-06-19T12:48:08.174421Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.157": {
+      "last_scan": "2026-06-19T12:48:08.174451Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.5": {
+      "last_scan": "2026-06-19T12:48:08.174422Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.2": {
+      "last_scan": "2026-06-19T12:48:08.174451Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.45": {
+      "last_scan": "2026-06-19T12:48:08.174360Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.186": {
+      "last_scan": "2026-06-19T12:48:08.174340Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.96": {
+      "last_scan": "2026-06-19T12:48:08.174451Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.167": {
+      "last_scan": "2026-06-19T12:48:08.174405Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.79": {
+      "last_scan": "2026-06-19T12:48:08.174420Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.89": {
+      "last_scan": "2026-06-19T12:48:08.174314Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.97": {
+      "last_scan": "2026-06-19T12:48:08.174356Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.172": {
+      "last_scan": "2026-06-19T12:48:08.174404Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.106": {
+      "last_scan": "2026-06-19T12:48:08.174422Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.61": {
+      "last_scan": "2026-06-19T12:48:08.174423Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.91": {
+      "last_scan": "2026-06-19T12:48:08.174366Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.131": {
+      "last_scan": "2026-06-19T12:48:08.174414Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.43": {
+      "last_scan": "2026-06-19T12:48:08.174366Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.246": {
+      "last_scan": "2026-06-19T12:48:08.174358Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.130": {
+      "last_scan": "2026-06-19T12:48:08.174358Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.121": {
+      "last_scan": "2026-06-19T12:48:08.174418Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.113": {
+      "last_scan": "2026-06-19T12:48:08.174401Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.183": {
+      "last_scan": "2026-06-19T12:48:08.174367Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.224": {
+      "last_scan": "2026-06-19T12:48:08.174421Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.148": {
+      "last_scan": "2026-06-19T12:48:08.174310Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.93": {
+      "last_scan": "2026-06-19T12:48:08.174360Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.155": {
+      "last_scan": "2026-06-19T12:48:08.174340Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.92": {
+      "last_scan": "2026-06-19T12:48:08.174367Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.200": {
+      "last_scan": "2026-06-19T12:48:08.174365Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.58": {
+      "last_scan": "2026-06-19T12:48:08.174452Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.179": {
+      "last_scan": "2026-06-19T12:48:08.174317Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.209": {
+      "last_scan": "2026-06-19T12:48:08.174318Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.149": {
+      "last_scan": "2026-06-19T12:48:08.174360Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.23": {
+      "last_scan": "2026-06-19T12:48:08.174317Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.32": {
+      "last_scan": "2026-06-19T12:48:08.174366Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.158": {
+      "last_scan": "2026-06-19T12:48:08.174406Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.119": {
+      "last_scan": "2026-06-19T12:48:08.174450Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.206": {
+      "last_scan": "2026-06-19T12:48:08.174401Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.68": {
+      "last_scan": "2026-06-19T12:48:08.174357Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.181": {
+      "last_scan": "2026-06-19T12:48:08.174405Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.187": {
+      "last_scan": "2026-06-19T12:48:08.174357Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.185": {
+      "last_scan": "2026-06-19T12:48:08.174414Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.31": {
+      "last_scan": "2026-06-19T12:48:08.174403Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.46": {
+      "last_scan": "2026-06-19T12:48:08.174452Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.229": {
+      "last_scan": "2026-06-19T12:48:08.174423Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.88": {
+      "last_scan": "2026-06-19T12:48:08.174451Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.214": {
+      "last_scan": "2026-06-19T12:48:08.174451Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.142": {
+      "last_scan": "2026-06-19T12:48:08.174407Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.66": {
+      "last_scan": "2026-06-19T12:48:08.174403Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.126": {
+      "last_scan": "2026-06-19T12:48:08.174365Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.120": {
+      "last_scan": "2026-06-19T12:48:08.174406Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.36": {
+      "last_scan": "2026-06-19T12:48:08.174423Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.151": {
+      "last_scan": "2026-06-19T12:48:08.174315Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.62": {
+      "last_scan": "2026-06-19T12:48:08.174367Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.102": {
+      "last_scan": "2026-06-19T12:48:08.174340Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.195": {
+      "last_scan": "2026-06-19T12:48:08.174401Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.4": {
+      "last_scan": "2026-06-19T12:48:08.174367Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.132": {
+      "last_scan": "2026-06-19T12:48:08.174340Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.174": {
+      "last_scan": "2026-06-19T12:48:08.174314Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.9": {
+      "last_scan": "2026-06-19T12:48:08.174314Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.242": {
+      "last_scan": "2026-06-19T12:48:08.174338Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.71": {
+      "last_scan": "2026-06-19T12:48:08.174412Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.127": {
+      "last_scan": "2026-06-19T12:48:08.174310Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.168": {
+      "last_scan": "2026-06-19T12:48:08.174318Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.128": {
+      "last_scan": "2026-06-19T12:48:08.174406Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.147": {
+      "last_scan": "2026-06-19T12:48:08.174358Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.165": {
+      "last_scan": "2026-06-19T12:48:08.174365Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.254": {
+      "last_scan": "2026-06-19T12:48:08.174451Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.129": {
+      "last_scan": "2026-06-19T12:48:08.174338Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.137": {
+      "last_scan": "2026-06-19T12:48:08.174340Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.3": {
+      "last_scan": "2026-06-19T12:48:08.174367Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.1": {
+      "last_scan": "2026-06-19T12:48:08.174298Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.241": {
+      "last_scan": "2026-06-19T12:48:08.174402Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.218": {
+      "last_scan": "2026-06-19T12:48:08.174314Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.7": {
+      "last_scan": "2026-06-19T12:48:08.174415Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.243": {
+      "last_scan": "2026-06-19T12:48:08.174402Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.94": {
+      "last_scan": "2026-06-19T12:48:08.174421Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.49": {
+      "last_scan": "2026-06-19T12:48:08.174367Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.29": {
+      "last_scan": "2026-06-19T12:48:08.174317Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.143": {
+      "last_scan": "2026-06-19T12:48:08.174402Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.103": {
+      "last_scan": "2026-06-19T12:48:08.174450Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.82": {
+      "last_scan": "2026-06-19T12:48:08.174407Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.237": {
+      "last_scan": "2026-06-19T12:48:08.174450Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.178": {
+      "last_scan": "2026-06-19T12:48:08.174315Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.203": {
+      "last_scan": "2026-06-19T12:48:08.174403Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.135": {
+      "last_scan": "2026-06-19T12:48:08.174357Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.20": {
+      "last_scan": "2026-06-19T12:48:08.174368Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.234": {
+      "last_scan": "2026-06-19T12:48:08.174418Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.28": {
+      "last_scan": "2026-06-19T12:48:08.174403Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.176": {
+      "last_scan": "2026-06-19T12:48:08.174419Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.83": {
+      "last_scan": "2026-06-19T12:48:08.174368Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.194": {
+      "last_scan": "2026-06-19T12:48:08.174316Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.18": {
+      "last_scan": "2026-06-19T12:48:08.174415Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.159": {
+      "last_scan": "2026-06-19T12:48:08.174337Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.233": {
+      "last_scan": "2026-06-19T12:48:08.174366Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.228": {
+      "last_scan": "2026-06-19T12:48:08.174402Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.238": {
+      "last_scan": "2026-06-19T12:48:08.174407Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.235": {
+      "last_scan": "2026-06-19T12:48:08.174364Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.76": {
+      "last_scan": "2026-06-19T12:48:08.174366Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.21": {
+      "last_scan": "2026-06-19T12:48:08.174406Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.117": {
+      "last_scan": "2026-06-19T12:48:08.174421Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.221": {
+      "last_scan": "2026-06-19T12:48:08.174368Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.27": {
+      "last_scan": "2026-06-19T12:48:08.174364Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.109": {
+      "last_scan": "2026-06-19T12:48:08.174339Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.101": {
+      "last_scan": "2026-06-19T12:48:08.174449Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.52": {
+      "last_scan": "2026-06-19T12:48:08.174450Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.154": {
+      "last_scan": "2026-06-19T12:48:08.174318Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.144": {
+      "last_scan": "2026-06-19T12:48:08.174414Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.19": {
+      "last_scan": "2026-06-19T12:48:08.174419Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.188": {
+      "last_scan": "2026-06-19T12:48:08.174414Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.216": {
+      "last_scan": "2026-06-19T12:48:08.174423Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.239": {
+      "last_scan": "2026-06-19T12:48:08.174451Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.123": {
+      "last_scan": "2026-06-19T12:48:08.174452Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.136": {
+      "last_scan": "2026-06-19T12:48:08.174338Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.201": {
+      "last_scan": "2026-06-19T12:48:08.174405Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.99": {
+      "last_scan": "2026-06-19T12:48:08.174357Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "example.com": {
+      "last_scan": "2026-06-19T12:48:08.174407Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": "be:ab:14:cf:39:67:8f:da:0e:f1:60:6e:ed:b8:18:c2:29:8b:a2:cc:7a:00:88:6e:7d:c2:d2:41:0f:24:cd:35"
+    },
+    "192.168.1.41": {
+      "last_scan": "2026-06-19T12:48:08.174418Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.182": {
+      "last_scan": "2026-06-19T12:48:08.174423Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.191": {
+      "last_scan": "2026-06-19T12:48:08.174314Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.11": {
+      "last_scan": "2026-06-19T12:48:08.174360Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.247": {
+      "last_scan": "2026-06-19T12:48:08.174414Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.215": {
+      "last_scan": "2026-06-19T12:48:08.174423Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.161": {
+      "last_scan": "2026-06-19T12:48:08.174451Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.249": {
+      "last_scan": "2026-06-19T12:48:08.174368Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.139": {
+      "last_scan": "2026-06-19T12:48:08.174368Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.50": {
+      "last_scan": "2026-06-19T12:48:08.174339Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.86": {
+      "last_scan": "2026-06-19T12:48:08.174401Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.107": {
+      "last_scan": "2026-06-19T12:48:08.174449Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.124": {
+      "last_scan": "2026-06-19T12:48:08.174449Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.55": {
+      "last_scan": "2026-06-19T12:48:08.174401Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.104": {
+      "last_scan": "2026-06-19T12:48:08.174367Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.245": {
+      "last_scan": "2026-06-19T12:48:08.174422Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.220": {
+      "last_scan": "2026-06-19T12:48:08.174452Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.205": {
+      "last_scan": "2026-06-19T12:48:08.174367Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.226": {
+      "last_scan": "2026-06-19T12:48:08.174406Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.196": {
+      "last_scan": "2026-06-19T12:48:08.174418Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.162": {
+      "last_scan": "2026-06-19T12:48:08.174412Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.210": {
+      "last_scan": "2026-06-19T12:48:08.174404Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.67": {
+      "last_scan": "2026-06-19T12:48:08.174340Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.164": {
+      "last_scan": "2026-06-19T12:48:08.174403Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.33": {
+      "last_scan": "2026-06-19T12:48:08.174406Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.70": {
+      "last_scan": "2026-06-19T12:48:08.174420Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.134": {
+      "last_scan": "2026-06-19T12:48:08.174418Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.231": {
+      "last_scan": "2026-06-19T12:48:08.174364Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.15": {
+      "last_scan": "2026-06-19T12:48:08.174406Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    },
+    "192.168.1.244": {
+      "last_scan": "2026-06-19T12:48:08.174419Z",
+      "last_renew": null,
+      "last_notifications": {},
+      "renewal_history": [],
+      "current_fingerprint": null
+    }
+  },
+  "updated_at": "2026-06-19T12:48:08.174452Z"
+}
