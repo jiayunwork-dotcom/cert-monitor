@@ -2,6 +2,19 @@ use anyhow::{Context, Result};
 use serde::{Deserialize, Serialize};
 use std::path::{Path, PathBuf};
 
+pub fn expand_tilde(path: &str) -> PathBuf {
+    if let Some(stripped) = path.strip_prefix("~/") {
+        if let Some(home) = dirs::home_dir() {
+            return home.join(stripped);
+        }
+    } else if path == "~" {
+        if let Some(home) = dirs::home_dir() {
+            return home;
+        }
+    }
+    PathBuf::from(path)
+}
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Config {
     pub global: GlobalConfig,
@@ -111,7 +124,7 @@ impl Config {
         self.global
             .state_file
             .as_ref()
-            .map(PathBuf::from)
+            .map(|s| expand_tilde(s))
             .or_else(|| {
                 dirs::home_dir().map(|h| h.join(".cert-monitor").join("state.json"))
             })

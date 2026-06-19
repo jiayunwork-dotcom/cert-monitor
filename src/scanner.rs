@@ -4,6 +4,8 @@ use anyhow::{anyhow, Context, Result};
 use chrono::{TimeZone, Utc};
 use futures::stream::{FuturesUnordered, StreamExt};
 use ipnet::IpNet;
+use reqwest::Client;
+use sha1::Sha1;
 use sha2::{Digest, Sha256};
 use std::collections::HashSet;
 use std::net::IpAddr;
@@ -13,7 +15,7 @@ use std::time::Duration;
 use tokio::net::TcpStream;
 use tokio::sync::Semaphore;
 use tokio_rustls::TlsConnector;
-use bcder::{decode::{Constructed, IntoSource, Source}, Mode, Oid};
+use bcder::{decode::{Constructed, IntoSource, Source}, encode::{self, PrimitiveContent}, Integer, Mode, Oid, OctetString, Tag};
 use x509_certificate::{
     certificate::X509Certificate,
     rfc3280::{GeneralName, GeneralNames},
@@ -309,7 +311,7 @@ impl Scanner {
 
         let chain_complete = Scanner::verify_chain_complete(&certs);
         let ocsp_status = self
-            .check_ocsp_status(&leaf_cert, certs.get(1))
+            .check_ocsp_status(&leaf_cert, &certs)
             .await
             .unwrap_or(OcspStatus::Unknown);
 
@@ -377,15 +379,307 @@ impl Scanner {
     }
 
     fn verify_chain_complete(certs: &[rustls::pki_types::CertificateDer]) -> bool {
-        certs.len() >= 2
+        if certs.is_empty() {
+            return false;
+        }
+        if certs.len() == 1 {
+            return false;
+        }
+
+        let mut parsed_certs = Vec::new();
+        for cert_der in certs {
+            match X509Certificate::from_der(cert_der.as_ref()) {
+                Ok(cert) => parsed_certs.push(cert),
+                Err(_) => return false,
+            }
+        }
+
+        for i in 0..parsed_certs.len() - 1 {
+            let subject = &parsed_certs[i];
+            let issuer = &parsed_certs[i + 1];
+
+            if subject.tbs_certificate().issuer != issuer.tbs_certificate().subject {
+                return false;
+            }
+
+            if Self::verify_certificate_signature(subject, issuer).is_err() {
+                return false;
+            }
+        }
+
+        true
+    }
+
+    fn verify_certificate_signature(
+        subject: &X509Certificate,
+        issuer: &X509Certificate,
+    ) -> Result<()> {
+        use ring::signature::{self, VerificationAlgorithm};
+
+        let tbs_data = subject
+            .tbs_certificate()
+            .raw_data
+            .as_ref()
+            .ok_or_else(|| anyhow!("No raw TBS data available"))?;
+
+        let cert_der = subject.encode_der()?;
+        let tbs_len = tbs_data.len();
+        
+        let sig_alg_len = subject.signature_signature_algorithm_oid().as_ref().as_ref().len() + 4;
+        let sig_start = tbs_len + sig_alg_len + 2;
+        let actual_signature = if sig_start < cert_der.len() {
+            &cert_der[sig_start + 2..]
+        } else {
+            return Err(anyhow!("Invalid certificate structure"));
+        };
+
+        let subject_sig_alg = subject.signature_signature_algorithm_oid();
+        let oid_bytes: &[u8] = subject_sig_alg.as_ref().as_ref();
+
+        let alg: &dyn VerificationAlgorithm = if oid_bytes == [42, 134, 72, 134, 247, 13, 1, 1, 11] {
+            &signature::RSA_PKCS1_2048_8192_SHA256
+        } else if oid_bytes == [42, 134, 72, 134, 247, 13, 1, 1, 12] {
+            &signature::RSA_PKCS1_2048_8192_SHA384
+        } else if oid_bytes == [42, 134, 72, 134, 247, 13, 1, 1, 13] {
+            &signature::RSA_PKCS1_2048_8192_SHA512
+        } else if oid_bytes == [42, 134, 72, 206, 61, 4, 3, 2] {
+            &signature::ECDSA_P256_SHA256_ASN1
+        } else if oid_bytes == [42, 134, 72, 206, 61, 4, 3, 3] {
+            &signature::ECDSA_P384_SHA384_ASN1
+        } else {
+            return Err(anyhow!("Unsupported signature algorithm"));
+        };
+
+        let public_key = issuer
+            .tbs_certificate()
+            .subject_public_key_info
+            .subject_public_key
+            .octet_bytes();
+
+        let peer_public_key = signature::UnparsedPublicKey::new(alg, public_key);
+        peer_public_key.verify(tbs_data, actual_signature)
+            .map_err(|_| anyhow!("Signature verification failed"))?;
+
+        Ok(())
+    }
+
+    fn extract_ocsp_url(cert: &X509Certificate) -> Option<String> {
+        let oid_aia = Oid(&[43, 6, 1, 5, 5, 7, 1, 1]);
+        for ext in cert.iter_extensions() {
+            if ext.id == oid_aia {
+                let source = ext.value.clone().into_source();
+                if let Ok(url) = Constructed::decode(
+                    source,
+                    Mode::Der,
+                    |cons| -> Result<String, bcder::decode::DecodeError<<bcder::decode::BytesSource as Source>::Error>> {
+                        cons.take_sequence(|cons| {
+                            while let Ok(Some(access_desc)) = cons.take_opt_sequence(|cons| {
+                                let oid = Oid::take_from(cons)?;
+                                let oid_bytes: &[u8] = oid.as_ref().as_ref();
+                                if oid_bytes == [43, 6, 1, 5, 5, 7, 48, 1] {
+                                    let tag = Tag::ctx(6);
+                                    let ia5 = cons.take_constructed_if(tag, |cons| {
+                                        bcder::string::Ia5String::take_from(cons)
+                                    })?;
+                                    return Ok(Some(ia5.to_string()));
+                                }
+                                Ok(None)
+                            }) {
+                                if let Some(url) = access_desc {
+                                    return Ok(url);
+                                }
+                            }
+                            Err(cons.content_err("No OCSP URL found"))
+                        })
+                    }
+                ) {
+                    return Some(url);
+                }
+            }
+        }
+        None
     }
 
     async fn check_ocsp_status(
         &self,
-        _leaf: &X509Certificate,
-        _issuer: Option<&rustls::pki_types::CertificateDer<'_>>,
+        leaf: &X509Certificate,
+        certs: &[rustls::pki_types::CertificateDer<'_>],
     ) -> Result<OcspStatus> {
-        Ok(OcspStatus::Unknown)
+        let ocsp_url = match Self::extract_ocsp_url(leaf) {
+            Some(url) => url,
+            None => return Ok(OcspStatus::Unknown),
+        };
+
+        let issuer_cert = if certs.len() >= 2 {
+            match X509Certificate::from_der(certs[1].as_ref()) {
+                Ok(cert) => cert,
+                Err(_) => return Ok(OcspStatus::Unknown),
+            }
+        } else {
+            return Ok(OcspStatus::Unknown);
+        };
+
+        let ocsp_request = match Self::build_ocsp_request(leaf, &issuer_cert) {
+            Some(req) => req,
+            None => return Ok(OcspStatus::Unknown),
+        };
+
+        let client = Client::builder()
+            .timeout(Duration::from_secs(5))
+            .build()
+            .map_err(|e| anyhow!("Failed to build HTTP client: {}", e))?;
+
+        let response = client
+            .post(&ocsp_url)
+            .header("Content-Type", "application/ocsp-request")
+            .body(ocsp_request)
+            .send()
+            .await;
+
+        let response = match response {
+            Ok(r) => r,
+            Err(_) => return Ok(OcspStatus::Unknown),
+        };
+
+        let status = response.status();
+        if !status.is_success() {
+            return Ok(OcspStatus::Unknown);
+        }
+
+        let bytes = match response.bytes().await {
+            Ok(b) => b,
+            Err(_) => return Ok(OcspStatus::Unknown),
+        };
+
+        Ok(Self::parse_ocsp_response(&bytes))
+    }
+
+    fn build_ocsp_request(leaf: &X509Certificate, issuer: &X509Certificate) -> Option<Vec<u8>> {
+        use bcder::encode::Values;
+        use sha1::Digest;
+
+        let issuer_name_der = match issuer.tbs_certificate().subject.encode_ref().to_captured(Mode::Der).into_bytes() {
+            bytes if !bytes.is_empty() => bytes,
+            _ => return None,
+        };
+
+        let mut hasher = Sha1::new();
+        hasher.update(&issuer_name_der);
+        let issuer_name_hash = hasher.finalize();
+
+        let spki_der = issuer.tbs_certificate().subject_public_key_info.subject_public_key.octet_bytes();
+        let mut hasher = Sha1::new();
+        hasher.update(spki_der);
+        let issuer_key_hash = hasher.finalize();
+
+        let serial_number = &leaf.tbs_certificate().serial_number;
+        let serial_bytes = serial_number.encode_ref().to_captured(Mode::Der).into_bytes();
+        let serial_int = bcder::decode::Constructed::decode(
+            serial_bytes,
+            Mode::Der,
+            |cons| Integer::take_from(cons)
+        ).ok()?;
+
+        let request = encode::sequence((
+            encode::sequence((
+                Oid(&[43, 6, 1, 5, 5, 7, 48, 1, 1]).encode(),
+                ().encode(),
+            )),
+            encode::sequence((
+                encode::sequence((
+                    OctetString::new(bytes::Bytes::copy_from_slice(issuer_name_hash.as_slice())).encode(),
+                    OctetString::new(bytes::Bytes::copy_from_slice(issuer_key_hash.as_slice())).encode(),
+                    serial_int.encode(),
+                )),
+            )),
+        ));
+
+        Some(request.to_captured(Mode::Der).into_bytes().to_vec())
+    }
+
+    fn parse_ocsp_response(bytes: &[u8]) -> OcspStatus {
+        use bcder::decode::Source;
+
+        fn read_all_bytes<S: Source>(prim: &mut bcder::decode::Primitive<S>) -> Result<Vec<u8>, bcder::decode::DecodeError<S::Error>> {
+            let mut buf = Vec::new();
+            loop {
+                match prim.take_u8() {
+                    Ok(byte) => buf.push(byte),
+                    Err(_) => break,
+                }
+            }
+            Ok(buf)
+        }
+
+        let source = bcder::decode::BytesSource::new(bytes::Bytes::copy_from_slice(bytes));
+        let result: Result<Option<Option<OcspStatus>>, bcder::decode::DecodeError<<bcder::decode::BytesSource as Source>::Error>> = Constructed::decode(
+            source,
+            Mode::Der,
+            |cons| {
+                cons.take_sequence(|cons| {
+                    let _response_status = cons.take_primitive_if(Tag::ENUMERATED, |p| p.to_u8())?;
+                    let inner = cons.take_opt_constructed_if(Tag::CTX_0, |cons| {
+                        cons.take_sequence(|cons| {
+                            let _version = cons.take_opt_constructed_if(Tag::CTX_0, |cons| {
+                                cons.take_u8()
+                            })?;
+                            let _responder_id = cons.take_opt_constructed_if(Tag::CTX_1, |cons| {
+                                cons.take_primitive_if(Tag::OCTET_STRING, |p| read_all_bytes(p))
+                            }).or_else(|_| {
+                                cons.take_opt_constructed_if(Tag::CTX_2, |cons| {
+                                    cons.take_sequence(|_| Ok(Vec::new()))
+                                })
+                            })?;
+                            let _produced_at = cons.take_primitive_if(Tag::GENERALIZED_TIME, |p| read_all_bytes(p))?;
+
+                            cons.take_sequence(|cons| {
+                                loop {
+                                    let resp_opt = cons.take_opt_sequence(|cons| {
+                                        let _cert_id = cons.take_sequence(|cons| {
+                                            let _hash_alg = cons.take_sequence(|_cons| Ok(()))?;
+                                            let _name_hash = cons.take_primitive_if(Tag::OCTET_STRING, |p| read_all_bytes(p))?;
+                                            let _key_hash = cons.take_primitive_if(Tag::OCTET_STRING, |p| read_all_bytes(p))?;
+                                            let _serial = Integer::take_from(cons)?;
+                                            Ok(())
+                                        })?;
+
+                                        let status_opt = cons.take_opt_constructed_if(Tag::CTX_0, |_cons| {
+                                            Ok(())
+                                        })?;
+                                        if status_opt.is_some() {
+                                            return Ok(Some(OcspStatus::Good));
+                                        }
+
+                                        let status_opt = cons.take_opt_constructed_if(Tag::CTX_1, |cons| {
+                                            let _revoked_time = cons.take_primitive_if(Tag::GENERALIZED_TIME, |p| read_all_bytes(p))?;
+                                            let _reason = cons.take_opt_primitive_if(Tag::ENUMERATED, |p| p.to_u8())?;
+                                            Ok(())
+                                        })?;
+                                        if status_opt.is_some() {
+                                            return Ok(Some(OcspStatus::Revoked));
+                                        }
+
+                                        let _this_update = cons.take_primitive_if(Tag::GENERALIZED_TIME, |p| read_all_bytes(p))?;
+                                        let _next_update = cons.take_opt_constructed_if(Tag::CTX_0, |cons| {
+                                            cons.take_primitive_if(Tag::GENERALIZED_TIME, |p| read_all_bytes(p))
+                                        })?;
+
+                                        Ok(Some(OcspStatus::Unknown))
+                                    })?;
+
+                                    if let Some(status) = resp_opt {
+                                        return Ok(status);
+                                    }
+                                }
+                            })
+                        })
+                    })?;
+                    Ok(inner)
+                })
+            }
+        );
+
+        result.unwrap_or(None).flatten().unwrap_or(OcspStatus::Unknown)
     }
 
     pub async fn scan_pem_file(&self, domain: &str, pem_path: &Path) -> Result<ScanResult> {
